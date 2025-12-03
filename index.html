@@ -1,64 +1,76 @@
-<!-- هدر حرفه‌ای -->
-<header style="
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px 20px;
-  background:#1a1a1a;
-  position:sticky;
-  top:0;
-  z-index:999;
-  border-bottom:1px solid #333;
-">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>VibeWall Wallpapers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
+    text-align: center;
+}
 
-  <!-- لوگو -->
-  <div>
-    <img src="logo.svg" alt="VibeWall Logo" style="height:50px;">
-  </div>
+h1 {
+    margin-top: 25px;
+    font-size: 32px;
+}
 
-  <!-- دکمه تغییر تم -->
-  <button id="themeToggle" style="
-    padding:8px 15px;
-    border-radius:8px;
-    background:#ffcc00;
-    border:none;
-    cursor:pointer;
-    font-weight:bold;
-  ">🔆 Light</button>
+.category {
+    background: #1a1a1a;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+}
 
-</header>
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0f62fe;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+</style>
+</head>
 
-<!-- منوی دسته‌بندی -->
-<nav style="
-  background:#111;
-  padding:10px;
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-  justify-content:center;
-  border-bottom:1px solid #222;
-">
-  <a href="#girls" style="color:#ffcc00;text-decoration:none;">✨ دخترانه</a>
-  <a href="#cars" style="color:#ffcc00;text-decoration:none;">🚗 خودرو</a>
-  <a href="#anime" style="color:#ffcc00;text-decoration:none;">🎌 انیمه</a>
-  <a href="#nature" style="color:#ffcc00;text-decoration:none;">🌲 طبیعت</a>
-  <a href="#gaming" style="color:#ffcc00;text-decoration:none;">🎮 گیمینگ</a>
-  <a href="#minimal" style="color:#ffcc00;text-decoration:none;">⚪ مینیمال</a>
-</nav>
+<body>
 
-<!-- Dark / Light Script -->
-<script>
-let dark = true;
-document.getElementById("themeToggle").onclick = function(){
-    dark = !dark;
-    if(dark){
-        document.body.style.background="#111";
-        document.body.style.color="#fff";
-        this.innerText="🔆 Light";
-    } else {
-        document.body.style.background="#fff";
-        document.body.style.color="#000";
-        this.innerText="🌙 Dark";
-    }
-};
-</script>
+<h1>🔥 VibeWall – 4K Wallpapers</h1>
+<p>Select Category</p>
+
+<div class="category">
+    <h2>Anime Wallpapers</h2>
+    <a class="button" href="anime.html">Open</a>
+</div>
+
+<div class="category">
+    <h2>Gaming Wallpapers</h2>
+    <a class="button" href="gaming.html">Open</a>
+</div>
+
+<div class="category">
+    <h2>Girls Aesthetic</h2>
+    <a class="button" href="girls.html">Open</a>
+</div>
+
+<div class="category">
+    <h2>Boys Aesthetic</h2>
+    <a class="button" href="boys.html">Open</a>
+</div>
+
+<div class="category">
+    <h2>Cars Wallpapers</h2>
+    <a class="button" href="cars.html">Open</a>
+</div>
+
+<div class="category">
+    <h2>Nature Wallpapers</h2>
+    <a class="button" href="nature.html">Open</a>
+</div>
+
+</body>
+</html>
