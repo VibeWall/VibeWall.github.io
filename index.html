@@ -1,66 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>VibeWall Mods - Free Mod Menus</title>
+<!-- هدر حرفه‌ای -->
+<header style="
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+  background:#1a1a1a;
+  position:sticky;
+  top:0;
+  z-index:999;
+  border-bottom:1px solid #333;
+">
 
-<style>
-body {
-  background: #111;
-  color: #fff;
-  font-family: Arial;
-  text-align: center;
-  padding: 20px;
-}
+  <!-- لوگو -->
+  <div>
+    <img src="logo.svg" alt="VibeWall Logo" style="height:50px;">
+  </div>
 
-.card {
-  background: #222;
-  padding: 20px;
-  margin: 20px auto;
-  width: 85%;
-  border-radius: 10px;
-}
+  <!-- دکمه تغییر تم -->
+  <button id="themeToggle" style="
+    padding:8px 15px;
+    border-radius:8px;
+    background:#ffcc00;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+  ">🔆 Light</button>
 
-button {
-  background: #0f62fe;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 7px;
-  font-size: 16px;
-}
-</style>
-</head>
+</header>
 
-<body>
-<h1>🔥 VibeWall Mods</h1>
-<p>Download Free Game Mods • Mod Menus • Script Mods</p>
+<!-- منوی دسته‌بندی -->
+<nav style="
+  background:#111;
+  padding:10px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  justify-content:center;
+  border-bottom:1px solid #222;
+">
+  <a href="#girls" style="color:#ffcc00;text-decoration:none;">✨ دخترانه</a>
+  <a href="#cars" style="color:#ffcc00;text-decoration:none;">🚗 خودرو</a>
+  <a href="#anime" style="color:#ffcc00;text-decoration:none;">🎌 انیمه</a>
+  <a href="#nature" style="color:#ffcc00;text-decoration:none;">🌲 طبیعت</a>
+  <a href="#gaming" style="color:#ffcc00;text-decoration:none;">🎮 گیمینگ</a>
+  <a href="#minimal" style="color:#ffcc00;text-decoration:none;">⚪ مینیمال</a>
+</nav>
 
-<div class="card">
-  <h2>Free Fire Mod Menu</h2>
-  <p>Aimbot • ESP • Auto Headshot</p>
-  <a href="freefire.html">
-    <button>Download Page</button>
-  </a>
-</div>
-
-<div class="card">
-  <h2>PUBG Mobile Mod</h2>
-  <p>Anti-Recoil • Magic Bullet • ESP</p>
-  <a href="pubg.html">
-    <button>Download Page</button>
-  </a>
-</div>
-
-<div class="card">
-  <h2>GTA SA Mods</h2>
-  <p>Cars • Skins • CLEO Mods</p>
-  <a href="gta.html">
-    <button>Download Page</button>
-  </a>
-</div>
-
-<p>More mods coming soon...</p>
-</body>
-</html>
+<!-- Dark / Light Script -->
+<script>
+let dark = true;
+document.getElementById("themeToggle").onclick = function(){
+    dark = !dark;
+    if(dark){
+        document.body.style.background="#111";
+        document.body.style.color="#fff";
+        this.innerText="🔆 Light";
+    } else {
+        document.body.style.background="#fff";
+        document.body.style.color="#000";
+        this.innerText="🌙 Dark";
+    }
+};
+</script>
