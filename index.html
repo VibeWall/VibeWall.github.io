@@ -2,74 +2,83 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>VibeWall Wallpapers</title>
+<title>VibeWall – 4K Wallpapers</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #111;
-    color: #fff;
+    background: #0d0d0d;
+    font-family: Arial;
+    color: white;
     text-align: center;
 }
-
 h1 {
-    margin-top: 25px;
-    font-size: 32px;
+    margin-top: 30px;
+    font-size: 34px;
 }
-
-.category {
-    background: #1a1a1a;
-    margin: 20px;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 18px;
     padding: 20px;
+}
+.card {
+    background: #1a1a1a;
+    padding: 25px;
     border-radius: 12px;
 }
-
-a.button {
+.card h2 {
+    font-size: 20px;
+}
+a.btn {
     display: inline-block;
-    padding: 10px 20px;
+    margin-top: 10px;
     background: #0f62fe;
-    color: #fff;
+    padding: 10px 18px;
+    color: white;
     border-radius: 8px;
     text-decoration: none;
-    margin-top: 10px;
 }
 </style>
 </head>
 
 <body>
 
-<h1>🔥 VibeWall – 4K Wallpapers</h1>
-<p>Select Category</p>
+<h1>🔥 VibeWall – Ultra HD Wallpapers</h1>
+<p>Select a category</p>
 
-<div class="category">
-    <h2>Anime Wallpapers</h2>
-    <a class="button" href="anime.html">Open</a>
+<div class="grid">
+
+<div class="card">
+    <h2>Anime</h2>
+    <a class="btn" href="anime.html">Open</a>
 </div>
 
-<div class="category">
-    <h2>Gaming Wallpapers</h2>
-    <a class="button" href="gaming.html">Open</a>
+<div class="card">
+    <h2>Gaming</h2>
+    <a class="btn" href="gaming.html">Open</a>
 </div>
 
-<div class="category">
+<div class="card">
     <h2>Girls Aesthetic</h2>
-    <a class="button" href="girls.html">Open</a>
+    <a class="btn" href="girls.html">Open</a>
 </div>
 
-<div class="category">
+<div class="card">
     <h2>Boys Aesthetic</h2>
-    <a class="button" href="boys.html">Open</a>
+    <a class="btn" href="boys.html">Open</a>
 </div>
 
-<div class="category">
-    <h2>Cars Wallpapers</h2>
-    <a class="button" href="cars.html">Open</a>
+<div class="card">
+    <h2>Cars</h2>
+    <a class="btn" href="cars.html">Open</a>
 </div>
 
-<div class="category">
-    <h2>Nature Wallpapers</h2>
-    <a class="button" href="nature.html">Open</a>
+<div class="card">
+    <h2>Nature</h2>
+    <a class="btn" href="nature.html">Open</a>
+</div>
+
 </div>
 
 </body>
